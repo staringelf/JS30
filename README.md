@@ -11,5 +11,6 @@ Day 1: Drum Kit
     
     So, the function becomes :
     function removeTransition () {
+       //if(e.propertyName !== 'transform') return;
        this.classList.remove('playing');
     }
