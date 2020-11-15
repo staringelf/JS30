@@ -6,7 +6,9 @@ Starter Files: https://github.com/wesbos/JavaScript30
 
 Day 1: Drum Kit
     Issue: If we press a key repeatedly too quickly...for some reason the '.playing' class is not removed from the key.
+    
     It can be fixed by not checking for propertyName of transitionend event(e.propertyName !== 'transform') inside removeTransition function.
+    
     So, the function becomes :
     function removeTransition () {
        this.classList.remove('playing');
